@@ -1,7 +1,11 @@
 from Modules.todo_m import get_todo, do_todo
+import time
 
 
 def todo():
+    current_time = time.strftime("%b %d %Y, %H:%M:%S")
+    print(current_time)
+
     while True:
         menu = input("Select your option: add, show, edit, complete, exit: ")
         match menu:
@@ -49,4 +53,6 @@ def todo():
 
             case _:
                 print("You write wrong type symbols. Use only please a-z chars")
-todo()
+s = open("save_data.txt", 'w')
+s.write("dasd")
+s.close()
