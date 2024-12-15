@@ -1,12 +1,16 @@
+FILE_PATH = "save_data.txt"
 
-
-def get_todo():
-    with open("save_data.txt", 'r', encoding='utf-8') as save:
+def get_todo(filepath=FILE_PATH):
+    with open(filepath, 'r', encoding='utf-8') as save:
         return save.readlines()
 
-def do_todo(lst):
-    with open("save_data.txt", 'w', encoding='utf-8') as write:
+def do_todo(lst, filepath=FILE_PATH):
+    with open(filepath, 'w', encoding='utf-8') as write:
         write.writelines(lst)
+
+def read_line(filepath=FILE_PATH):
+    with open(filepath, 'r', encoding='utf-8') as save:
+        return save.read()
 
 
 if __name__ == "__main__":
