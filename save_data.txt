@@ -1,9 +1,4 @@
-Time to go in the GYM
-Learn more Python
-What???
-:)
-I need to get up every Fcking morning
-Learn math
-Learn more math
-Book about what?
-Last think
+1. Wake
+2. Go to run
+3. Breakfast
+4.Learn
